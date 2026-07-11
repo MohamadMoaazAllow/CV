@@ -4,203 +4,123 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mohamad Moaaz Allow — CV</title>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Lato', Arial, sans-serif;
-    font-size: 13px;
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 14px;
     color: #1a1a1a;
     background: #fff;
-    padding: 44px 52px;
+    padding: 40px 50px;
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.55;
-  }
-
-  @media print {
-    body { padding: 30px 40px; }
-  }
-
-  .header {
-    border-left: 4px solid #C8973A;
-    padding-left: 14px;
-    margin-bottom: 16px;
-  }
-
-  h1 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1A3259;
-    letter-spacing: 0.3px;
-    margin-bottom: 2px;
-  }
-
-  .subtitle {
-    font-size: 11px;
-    color: #C8973A;
-    font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 7px;
-  }
-
-  .contact-line {
-    font-size: 12px;
-    color: #555;
-    margin-bottom: 2px;
-  }
-
-  .contact-line a {
-    color: #1A3259;
-    text-decoration: none;
-  }
-
-  .section-title {
-    font-size: 10.5px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.8px;
-    margin-bottom: 10px;
-    margin-top: 18px;
-    color: #1A3259;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
-
-  .section-title::before {
-    content: '';
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: #C8973A;
-    flex-shrink: 0;
-  }
-
-  .section-title::after {
-    content: '';
-    flex: 1;
-    height: 1px;
-    background: #dde3ec;
-  }
-
-  .skills-block {
-    margin-bottom: 4px;
-    font-size: 12.5px;
-    color: #333;
-  }
-
-  .skills-block strong {
-    color: #1A3259;
-    font-weight: 700;
-  }
-
-  .exp-entry {
-    margin-bottom: 16px;
-  }
-
-  .exp-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-
-  .exp-header .left {
-    font-weight: 700;
-    font-size: 13px;
-    color: #1A3259;
-  }
-
-  .exp-header .right {
-    font-size: 11.5px;
-    color: #aaa;
-    white-space: nowrap;
-    font-weight: 300;
-  }
-
-  .exp-company {
-    font-size: 12px;
-    color: #C8973A;
-    font-weight: 700;
-    margin-bottom: 5px;
-    letter-spacing: 0.3px;
-  }
-
-  ul {
-    padding-left: 0;
-    margin-top: 5px;
-    list-style: none;
-  }
-
-  ul li {
-    margin-bottom: 4px;
-    font-size: 12.5px;
-    padding-left: 14px;
-    position: relative;
-    color: #333;
     line-height: 1.5;
   }
 
-  ul li::before {
-    content: '–';
-    position: absolute;
-    left: 0;
-    color: #C8973A;
-    font-weight: 700;
+  h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #1A3259;
+    margin-bottom: 4px;
   }
 
-  .proj-entry {
-    margin-bottom: 13px;
+  .subtitle {
+    font-size: 14px;
+    color: #6B5313;
+    margin-bottom: 8px;
   }
 
-  .proj-title {
-    font-weight: 700;
+  .contact-line {
     font-size: 13px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+
+  .contact-line a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  h2 {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #1A3259;
+    border-bottom: 1px solid #999;
+    padding-bottom: 3px;
+    margin-top: 22px;
+    margin-bottom: 10px;
+  }
+
+  .skills-line {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+
+  .skills-line strong {
     color: #1A3259;
   }
 
-  .proj-tech {
-    font-size: 11.5px;
-    color: #C8973A;
-    font-weight: 400;
-    margin-bottom: 3px;
-    letter-spacing: 0.2px;
+  .entry {
+    margin-bottom: 14px;
+  }
+
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 15px;
+    color: #1A3259;
+  }
+
+  .entry-header .date {
+    font-weight: normal;
+    font-size: 13px;
+    color: #555;
+    white-space: nowrap;
+  }
+
+  .entry-sub {
+    font-size: 13.5px;
+    font-weight: bold;
+    color: #6B5313;
+    margin-bottom: 6px;
+  }
+
+  ul {
+    margin: 6px 0 0 22px;
+  }
+
+  li {
+    font-size: 14px;
+    margin-bottom: 5px;
   }
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>Mohamad Moaaz Allow</h1>
-  <div class="subtitle">Software Engineer &nbsp;·&nbsp; Full-Stack &nbsp;·&nbsp; NestJS &nbsp;·&nbsp; Vue 3 &nbsp;·&nbsp; Laravel &nbsp;·&nbsp; Flutter</div>
-  <div class="contact-line">+963 959 024 914 &nbsp;|&nbsp; moaazallow@gmail.com</div>
-  <div class="contact-line">
-    <a href="https://linkedin.com/in/MohamadMoaazAllow">linkedin.com/in/MohamadMoaazAllow</a>
-    &nbsp;|&nbsp;
-    <a href="https://github.com/MohamadMoaazAllow">github.com/MohamadMoaazAllow</a>
-  </div>
+<h1>Mohamad Moaaz Allow</h1>
+<div class="subtitle">Software Engineer | Full-Stack Developer | NestJS, Vue 3, Laravel, Flutter</div>
+<div class="contact-line">
+  +963 959 024 914 &nbsp;|&nbsp; moaazallow@gmail.com &nbsp;|&nbsp;
+  <a href="https://linkedin.com/in/MohamadMoaazAllow">linkedin.com/in/MohamadMoaazAllow</a> &nbsp;|&nbsp;
+  <a href="https://github.com/MohamadMoaazAllow">github.com/MohamadMoaazAllow</a>
 </div>
 
-<div class="section-title">Technical Skills</div>
-<div class="skills-block"><strong>Backend:</strong> NestJS, Laravel, Express.js, TypeScript, PHP, RESTful APIs, Microservices (TCP), JWT, Passport, Sanctum, Swagger/OpenAPI</div>
-<div class="skills-block"><strong>Frontend & Mobile:</strong> Vue 3 (Pinia, Vite), React, Flutter, Dart, HTML, CSS, JavaScript ES6+, Socket.io, RTL/i18n</div>
-<div class="skills-block"><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Oracle, TypeORM, Eloquent</div>
-<div class="skills-block"><strong>Cloud & DevOps:</strong> AWS (EC2, S3, SQS, SSM, CloudFront, CodeBuild), Azure Blob, Docker, Nginx, PM2, CI/CD</div>
-<div class="skills-block"><strong>Integrations:</strong> Firebase Cloud Messaging (FCM), WhatsApp Business API, Jitsi Meet, PostGIS, Elasticsearch</div>
-<div class="skills-block"><strong>Languages:</strong> TypeScript, Java, Python, C++, PHP</div>
-<div class="skills-block"><strong>Tools:</strong> Git, GitHub, Postman, Jira, Agile, VS Code, Cursor, Claude Code</div>
+<h2>Technical Skills</h2>
+<div class="skills-line"><strong>Backend:</strong> NestJS, Laravel, Express.js, TypeScript, PHP, RESTful APIs, Microservices (TCP), JWT, Passport, Sanctum, Swagger/OpenAPI</div>
+<div class="skills-line"><strong>Frontend & Mobile:</strong> Vue 3 (Pinia, Vite), React, Flutter, Dart, HTML, CSS, JavaScript ES6+, Socket.io, RTL/i18n</div>
+<div class="skills-line"><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Oracle, TypeORM, Eloquent</div>
+<div class="skills-line"><strong>Cloud & DevOps:</strong> AWS (EC2, S3, SQS, SSM, CloudFront, CodeBuild), Azure Blob, Docker, Nginx, PM2, CI/CD</div>
+<div class="skills-line"><strong>Integrations:</strong> Firebase Cloud Messaging (FCM), WhatsApp Business API, Jitsi Meet, PostGIS, Elasticsearch</div>
+<div class="skills-line"><strong>Languages:</strong> TypeScript, Java, Python, C++, PHP</div>
+<div class="skills-line"><strong>Tools:</strong> Git, GitHub, Postman, Jira, Agile, VS Code, Cursor, Claude Code</div>
 
-<div class="section-title">Experience</div>
-
-<div class="exp-entry">
-  <div class="exp-header">
-    <span class="left">Backend / Full-Stack Developer</span>
-    <span class="right">Jan 2026 – Present</span>
-  </div>
-  <div class="exp-company">Quantum Bridge Solutions</div>
+<h2>Experience</h2>
+<div class="entry">
+  <div class="entry-header"><span>Backend / Full-Stack Developer</span><span class="date">Jan 2026 – Present</span></div>
+  <div class="entry-sub">Quantum Bridge Solutions</div>
   <ul>
     <li>Delivered the Ministry of Administrative Development platform, a government digital-transformation system for digitizing administrative workflows, approvals, and citizen service requests, using Vue 3, Firebase, Socket.io, ESRI mapping, and AWS</li>
     <li>Built Golden Core, a full HR/workflow management ecosystem spanning Flutter (mobile app), NestJS (backend), and Vue 3 (dashboard), including GPS-geofenced attendance, real-time task management with WebSocket chat, leave approval workflows, an announcements module, and Firebase push notifications, deployed on AWS EC2</li>
@@ -209,56 +129,53 @@
   </ul>
 </div>
 
-<div class="section-title">Projects</div>
+<h2>Projects</h2>
 
-<div class="proj-entry">
-  <div class="proj-title">Tutory — Tutoring Marketplace Platform (Graduation Project)</div>
-  <div class="proj-tech">Laravel 12 · MariaDB · Sanctum · REST API</div>
+<div class="entry">
+  <div class="entry-header"><span>Tutory — Tutoring Marketplace Platform (Graduation Project)</span></div>
+  <div class="entry-sub">Laravel 12, MariaDB, Sanctum, REST API</div>
   <ul>
     <li>Built the complete backend for a two-sided tutoring marketplace, with a wallet hold/release system that freezes funds at booking and releases them to tutors only after QR-code session verification, plus automated 10% commission handling</li>
     <li>Designed a multi-stage booking state machine with time-conflict detection and tiered cancellation penalties, parental approval flows for minors, and integrations with Paymera payments, Google Maps distance-based pricing, and Jitsi Meet video sessions across 25+ database tables</li>
   </ul>
 </div>
 
-<div class="proj-entry">
-  <div class="proj-title">Mosque Management System</div>
-  <div class="proj-tech">NestJS · PostgreSQL · TypeORM · JWT · Swagger</div>
+<div class="entry">
+  <div class="entry-header"><span>Mosque Management System</span></div>
+  <div class="entry-sub">NestJS, PostgreSQL, TypeORM, JWT, Swagger</div>
   <ul>
     <li>Built the backend for an Islamic education management platform covering students, teachers, Quran memorization circles, courses, and attendance tracking</li>
     <li>Designed 11 entities/modules with JWT auth, UUID primary keys, bcrypt password hashing, and full Swagger documentation</li>
   </ul>
 </div>
 
-<div class="proj-entry">
-  <div class="proj-title">ASPU Insight — Academic Journal Platform</div>
-  <div class="proj-tech">HTML · CSS · JavaScript · GSAP</div>
+<div class="entry">
+  <div class="entry-header"><span>ASPU Insight — Academic Journal Platform</span></div>
+  <div class="entry-sub">HTML, CSS, JavaScript, GSAP</div>
   <ul>
     <li>Built a multi-page academic journal platform with a custom visual identity, GSAP animations, and Arabic-first typography</li>
   </ul>
 </div>
 
-<div class="proj-entry">
-  <div class="proj-title">Search Algorithms Visualizer</div>
-  <div class="proj-tech">Python</div>
+<div class="entry">
+  <div class="entry-header"><span>Search Algorithms Visualizer</span></div>
+  <div class="entry-sub">Python</div>
   <ul>
     <li>Built a visual tool demonstrating A*, Dijkstra, BFS, and DFS pathfinding algorithms with performance comparison on grid-based maps</li>
   </ul>
 </div>
 
-<div class="proj-entry">
-  <div class="proj-title">Citizen Services Center / Lost Archives</div>
-  <div class="proj-tech">Java · OOP · Data Structures · File Handling</div>
+<div class="entry">
+  <div class="entry-header"><span>Citizen Services Center / Lost Archives</span></div>
+  <div class="entry-sub">Java, OOP, Data Structures, File Handling</div>
   <ul>
     <li>Built two Java systems: a citizen service request manager using optimized data structures, and an archive recovery tool restoring file integrity using recovery algorithms</li>
   </ul>
 </div>
 
-<div class="section-title">Education</div>
-<div class="exp-entry">
-  <div class="exp-header">
-    <span class="left">Al-Sham Private University &nbsp;|&nbsp; B.Sc. Information Technology Engineering</span>
-    <span class="right">2022 – 2026</span>
-  </div>
+<h2>Education</h2>
+<div class="entry">
+  <div class="entry-header"><span>Al-Sham Private University — B.Sc. Information Technology Engineering</span><span class="date">2022 – 2026</span></div>
 </div>
 
 </body>
