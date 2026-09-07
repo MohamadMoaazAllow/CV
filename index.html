@@ -99,6 +99,14 @@
     vertical-align: middle;
     text-transform: uppercase;
   }
+  @media print {
+    body { padding: 22px 45px; }
+    .entry { margin-bottom: 13px; page-break-inside: avoid; break-inside: avoid; }
+    li { margin-bottom: 5px; page-break-inside: avoid; break-inside: avoid; }
+    ul { margin-top: 5px; }
+    h2 { margin-top: 16px; margin-bottom: 8px; page-break-after: avoid; break-after: avoid; }
+    .section { page-break-inside: avoid; break-inside: avoid; }
+  }
 </style>
 </head>
 <body>
@@ -250,9 +258,11 @@
   </ul>
 </div>
 
+<div class="section">
 <h2>Education</h2>
 <div class="entry">
   <div class="entry-header"><span>Al-Sham Private University — B.Sc. Information Technology Engineering</span><span class="date">2022 – 2026</span></div>
+</div>
 </div>
 </body>
 </html>
