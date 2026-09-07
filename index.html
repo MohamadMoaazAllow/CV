@@ -50,15 +50,8 @@
     font-size: 14px;
     margin-bottom: 4px;
   }
-  .skills-line {
-    font-size: 14px;
-    margin-bottom: 6px;
-  }
-  .skills-line strong {
-    color: #1A3259;
-  }
   .entry {
-    margin-bottom: 14px;
+    margin-bottom: 16px;
   }
   .entry-header {
     display: flex;
@@ -84,7 +77,36 @@
   }
   li {
     font-size: 14px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
+  }
+  .tech {
+    display: block;
+    font-size: 12px;
+    color: #6B5313;
+    font-style: italic;
+    margin-top: 1px;
+  }
+  .featured {
+    border-left: 3px solid #6E2514;
+    background: #FBF8F3;
+    padding: 12px 14px;
+    border-radius: 4px;
+    margin-bottom: 18px;
+  }
+  .featured .entry-header { color: #6E2514; font-size: 16px; }
+  .featured .entry-sub { color: #6E2514; }
+  .featured .tech { color: #8a5a1f; }
+  .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: bold;
+    color: #fff;
+    background: #6E2514;
+    padding: 1px 7px;
+    border-radius: 3px;
+    margin-left: 8px;
+    vertical-align: middle;
+    text-transform: uppercase;
   }
 </style>
 </head>
@@ -98,77 +120,156 @@
 </div>
 
 <h2>Professional Summary</h2>
-<div class="summary">Full-stack software engineer with hands-on experience delivering production systems end to end, from NestJS/Laravel backends to Vue 3 dashboards and Flutter mobile apps. Specialized in secure, scalable architecture: microservices, role-based permission design, and cloud-native deployment on AWS. Shipped a government digital-transformation platform and a full HR/workflow ecosystem currently in production use. Open to full-stack and backend-leaning engineering roles.</div>
-
-<h2>Technical Skills</h2>
-<div class="skills-line"><strong>Backend:</strong> NestJS, Laravel, Express.js, TypeScript, PHP, RESTful APIs, Microservices (TCP), JWT, Passport, Sanctum, Swagger/OpenAPI</div>
-<div class="skills-line"><strong>Frontend & Mobile:</strong> Vue 3 (Pinia, Vite), React, Flutter, Dart, HTML, CSS, JavaScript ES6+, Socket.io, RTL/i18n</div>
-<div class="skills-line"><strong>Databases:</strong> PostgreSQL, MySQL, MongoDB, Oracle, TypeORM, Eloquent, PostGIS</div>
-<div class="skills-line"><strong>Cloud & DevOps:</strong> AWS (EC2, S3, SQS, SSM, CloudFront, CodeBuild), Azure Blob, Docker, Nginx, PM2, CI/CD</div>
-<div class="skills-line"><strong>Integrations:</strong> Firebase Cloud Messaging (FCM), WhatsApp Business API, Jitsi Meet, Elasticsearch</div>
-<div class="skills-line"><strong>Security & Architecture:</strong> Role-based access control, dynamic permission systems, security auditing, system design</div>
-<div class="skills-line"><strong>Languages:</strong> TypeScript, Java, Python, C++, PHP</div>
-<div class="skills-line"><strong>Tools:</strong> Git, GitHub, Postman, Jira, Agile, VS Code, Cursor, Claude Code</div>
+<div class="summary">Full-stack software engineer delivering production systems end to end — NestJS/Laravel backends, Vue 3 dashboards, and Flutter mobile apps — with a focus on secure, scalable architecture and AWS cloud deployment. Shipped a government digital-transformation platform, a production HR/workflow ecosystem, and a large-scale institutional management platform, alongside a growing portfolio of SaaS and marketplace products.</div>
 
 <h2>Experience</h2>
 <div class="entry">
   <div class="entry-header"><span>Full-Stack Software Engineer</span><span class="date">Jan 2026 – Present</span></div>
   <div class="entry-sub">Quantum Bridge Solutions</div>
   <ul>
-    <li>Delivered the Ministry of Administrative Development platform, a government digital-transformation system for digitizing administrative workflows, approvals, and citizen service requests, using Vue 3, Firebase, Socket.io, ESRI mapping, and AWS</li>
-    <li>Built Golden Core, a full HR/workflow management ecosystem spanning Flutter (mobile app), NestJS (backend), and Vue 3 (dashboard), including GPS-geofenced attendance, real-time task management with WebSocket chat, leave approval workflows, a role-based permission system, an announcements module, and Firebase push notifications, deployed on AWS EC2</li>
-    <li>Built AMG Doors, an enterprise order management mobile app in Flutter, with a Finite State Machine (XState) order lifecycle, multi-cloud storage (AWS S3 + Azure Blob), WhatsApp Business API and Firebase notifications, and Socket.io real-time tracking</li>
-    <li>Architected a 5-service NestJS microservices monorepo (API gateway, users, businesses, orders, stocks) with TCP inter-service communication and independent PostgreSQL databases per service</li>
-    <li>Built a custom image compression pipeline (Sharp) that cut media storage footprint by roughly 20x at equivalent visual quality, applied across production upload flows</li>
-    <li>Ran a full security audit across production services, reviewing authentication, authorization, and data-exposure surfaces, and remediated the critical issues found</li>
+    <li><strong>Government platform:</strong> Delivered the Ministry of Administrative Development platform, a digital-transformation system for digitizing administrative workflows, approvals, and citizen service requests, applying the Syrian National Visual Identity design system.
+      <span class="tech">Tech: Vue 3, Firebase, Socket.io, ESRI mapping, AWS S3/CloudFront</span>
+    </li>
+    <li><strong>HR/workflow ecosystem:</strong> Built Golden Core, a full HR/workflow platform (mobile + backend + dashboard) with GPS-geofenced attendance, real-time WebSocket task chat, a granular per-role permission matrix enforced at the guard level, and a shared UI design system rolled out across the app.
+      <span class="tech">Tech: Flutter, NestJS, Vue 3, PostgreSQL, AWS (EC2/RDS/S3/CloudFront)</span>
+    </li>
+    <li><strong>Enterprise mobile app:</strong> Built AMG Doors, an order-management app with a Finite State Machine order lifecycle, multi-cloud file storage, WhatsApp Business API and Firebase push notifications, and real-time order tracking.
+      <span class="tech">Tech: Flutter, XState, GetX, AWS S3, Azure Blob, Socket.io</span>
+    </li>
+    <li><strong>Client delivery:</strong> Deployed the Bayan Design platform (backend + dashboard + storefront) to a dedicated production environment for external client handoff, including multi-domain SSL, dedicated S3 image storage, and least-privilege IAM configuration.
+      <span class="tech">Tech: NestJS, Vue 3, AWS EC2, S3, IAM, Nginx, Let's Encrypt</span>
+    </li>
+    <li><strong>Client delivery:</strong> Delivered Fanni, a services marketplace connecting skilled tradespeople with customers by profession, specialty, and location, including an admin dashboard for category, tag, and regional management.</li>
+    <li><strong>Architecture:</strong> Architected a 5-service NestJS microservices monorepo (API gateway, users, businesses, orders, stocks) with TCP inter-service communication and independent PostgreSQL databases per service.
+      <span class="tech">Tech: NestJS, TCP microservices, PostgreSQL</span>
+    </li>
+    <li><strong>Performance:</strong> Built a custom image compression pipeline that cut media storage footprint by roughly 20x at equivalent visual quality, applied across production upload flows.
+      <span class="tech">Tech: Sharp, Node.js</span>
+    </li>
+    <li><strong>Security:</strong> Ran a full security audit across production services — authentication, authorization, and data-exposure surfaces — and remediated the critical issues found.
+      <span class="tech">Tech: security auditing, JWT/RBAC review</span>
+    </li>
+    <li><strong>Marketing site:</strong> Overhauled the company's public portfolio site with real project case studies and team profiles, resolving asset-pipeline and CDN cache-invalidation issues.
+      <span class="tech">Tech: Vue.js, AWS S3/CloudFront</span>
+    </li>
+  </ul>
+</div>
+
+<h2>Featured Project</h2>
+<div class="entry featured">
+  <div class="entry-header"><span>Othman Mosque — Educational &amp; Administrative Management Platform<span class="tag">Live in Production</span></span></div>
+  <div class="entry-sub">NestJS · PostgreSQL · TypeORM · Next.js · JWT / RBAC</div>
+  <ul>
+    <li><strong>Backend architecture:</strong> Designed and built a full-stack management system for Quranic memorization circles, student enrollment, teacher management, and attendance — 11+ entity modules growing to roughly 40 REST endpoints spanning lesson sessions, attendance, circles, memorization progress, recitation records, delegation/promotion requests, and audit logging.
+      <span class="tech">Tech: NestJS, PostgreSQL, TypeORM</span>
+    </li>
+    <li><strong>Access control:</strong> Designed a scope-based RBAC/permission engine with JWT authentication, UUID primary keys, and bcrypt password hashing, plus race-safe refresh-token rotation to prevent concurrent-request token invalidation.
+      <span class="tech">Tech: NestJS, JWT, Passport</span>
+    </li>
+    <li><strong>Workflow automation:</strong> Implemented transactional approval flows for teacher promotion and delegation requests, backed by a global exception filter for consistent, predictable API error handling.
+      <span class="tech">Tech: NestJS, TypeORM transactions</span>
+    </li>
+    <li><strong>Admin dashboard:</strong> Built the companion admin dashboard, with the full API documented and testable via Swagger/OpenAPI.
+      <span class="tech">Tech: Next.js, TypeScript</span>
+    </li>
+    <li><strong>Security audit:</strong> Led a full-stack security audit (backend + dashboard), identifying and remediating critical issues including improper authorization checks (IDOR risk) and insecure default credentials, alongside 19 additional hardening and reliability fixes.
+      <span class="tech">Tech: security auditing, RBAC review</span>
+    </li>
+    <li><strong>Brand &amp; documentation:</strong> Designed and delivered a complete visual identity system (custom color palette, Arabic typography) and a series of operating-procedure and financial-reporting documents for the mosque's educational programs.
+      <span class="tech">Tech: brand identity design, technical documentation</span>
+    </li>
   </ul>
 </div>
 
 <h2>Projects</h2>
 <div class="entry">
-  <div class="entry-header"><span>Tutory — Tutoring Marketplace Platform (Graduation Project)</span></div>
-  <div class="entry-sub">Laravel 12, MariaDB, Sanctum, REST API</div>
+  <div class="entry-header"><span>Multi-Tenant Real Estate Archiving &amp; SaaS Platform</span></div>
+  <div class="entry-sub">NestJS, Vue 3, PostgreSQL, Supabase</div>
   <ul>
-    <li>Built the complete backend for a two-sided tutoring marketplace, with a wallet hold/release system that freezes funds at booking and releases them to tutors only after QR-code session verification, plus automated 10% commission handling</li>
-    <li>Designed a multi-stage booking state machine with time-conflict detection and tiered cancellation penalties, parental approval flows for minors, and integrations with Paymera payments, Google Maps distance-based pricing, and Jitsi Meet video sessions across 25+ database tables</li>
+    <li>Built a multi-tenant real estate document archiving system with per-office JWT-based tenant isolation, Syrian city/district filtering, and multipart file handling.
+      <span class="tech">Tech: NestJS, PostgreSQL, JWT</span>
+    </li>
+    <li>Designed a 3-tier SaaS subscription model (Basic / Pro / Max) with usage-aware access rules — expired plans block new additions but preserve login and data visibility; downgrades cap new usage without deleting existing records.
+      <span class="tech">Tech: NestJS, PostgreSQL</span>
+    </li>
+    <li>Implemented a multi-image upload pipeline with Sharp/WebP conversion, a soft-delete trash bin, and a super-admin management panel.
+      <span class="tech">Tech: NestJS, Sharp, Supabase Storage</span>
+    </li>
+    <li>Reached strong automated test coverage — 268 backend unit tests, 14 backend e2e tests, and 195 frontend tests — plus full security audits across the stack.
+      <span class="tech">Tech: Jest, Vue Test Utils</span>
+    </li>
+    <li>Deployed on Render and Vercel with Supabase (Postgres + Storage), resolving IPv6 pooler connectivity and SPA routing issues.
+      <span class="tech">Tech: Render, Vercel, Supabase</span>
+    </li>
   </ul>
 </div>
 <div class="entry">
-  <div class="entry-header"><span>Mosque Management System</span></div>
-  <div class="entry-sub">NestJS, PostgreSQL, TypeORM, JWT, Swagger</div>
+  <div class="entry-header"><span>Quantum Accountant — Inventory &amp; Accounting Management System</span></div>
+  <div class="entry-sub">NestJS, Vue 3, PostgreSQL, AWS S3</div>
   <ul>
-    <li>Built the backend for an Islamic education management platform covering students, teachers, Quran memorization circles, courses, and attendance tracking</li>
-    <li>Designed 11 entities/modules with JWT auth, UUID primary keys, bcrypt password hashing, and full Swagger documentation</li>
+    <li>Built a dynamic item-attribute system, including a CHASSIS_NUMBER attribute type integrated with the NHTSA vPIC VIN-decoder API, and a self-referencing vehicle-options taxonomy with 12,000+ entries.
+      <span class="tech">Tech: NestJS, PostgreSQL, external API integration</span>
+    </li>
+    <li>Implemented a presigned S3 upload/download flow for file and image attributes, client/transaction linking, and warehouse movement tracking.
+      <span class="tech">Tech: AWS S3, NestJS</span>
+    </li>
+    <li>Delivered a full frontend redesign under a new "Promage" visual identity system, deployed on AWS EC2 (PM2) with the frontend on S3/CloudFront.
+      <span class="tech">Tech: Vue 3, AWS EC2, PM2, CloudFront</span>
+    </li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="entry-header"><span>Tutory — Tutoring Marketplace Platform (Graduation Project)</span></div>
+  <div class="entry-sub">Laravel 12, MariaDB, Sanctum, REST API</div>
+  <ul>
+    <li>Built the complete backend for a two-sided tutoring marketplace, with a wallet hold/release system that freezes funds at booking and releases them to tutors only after QR-code session verification, plus automated 10% commission handling.
+      <span class="tech">Tech: Laravel, Sanctum, MariaDB</span>
+    </li>
+    <li>Designed a multi-stage booking state machine with time-conflict detection and tiered cancellation penalties, parental approval flows for minors, and integrations with Paymera payments, Google Maps distance-based pricing, and Jitsi Meet video sessions across 25+ database tables.
+      <span class="tech">Tech: Laravel, Paymera, Google Maps API, Jitsi Meet</span>
+    </li>
   </ul>
 </div>
 <div class="entry">
   <div class="entry-header"><span>ASPU Insight — Academic Journal Platform</span></div>
   <div class="entry-sub">HTML, CSS, JavaScript, GSAP</div>
   <ul>
-    <li>Built a multi-page academic journal platform with a custom visual identity, GSAP animations, and Arabic-first typography</li>
+    <li>Built a multi-page academic journal platform with a custom visual identity, GSAP animations, and Arabic-first typography.
+      <span class="tech">Tech: HTML/CSS, GSAP</span>
+    </li>
   </ul>
 </div>
 <div class="entry">
   <div class="entry-header"><span>Search Algorithms Visualizer</span></div>
   <div class="entry-sub">Python</div>
   <ul>
-    <li>Built a visual tool demonstrating A*, Dijkstra, BFS, and DFS pathfinding algorithms with performance comparison on grid-based maps</li>
+    <li>Built a visual tool demonstrating A*, Dijkstra, BFS, and DFS pathfinding algorithms with performance comparison on grid-based maps.
+      <span class="tech">Tech: Python</span>
+    </li>
   </ul>
 </div>
 <div class="entry">
   <div class="entry-header"><span>Citizen Services Center / Lost Archives</span></div>
   <div class="entry-sub">Java, OOP, Data Structures, File Handling</div>
   <ul>
-    <li>Built two Java systems: a citizen service request manager using optimized data structures, and an archive recovery tool restoring file integrity using recovery algorithms</li>
+    <li>Built two Java systems: a citizen service request manager using optimized data structures, and an archive recovery tool restoring file integrity using recovery algorithms.
+      <span class="tech">Tech: Java, OOP, data structures</span>
+    </li>
   </ul>
 </div>
 
 <h2>Additional Technical Highlights</h2>
 <div class="entry">
   <ul>
-    <li>Diagnosed and resolved a PostGIS race condition causing data corruption under concurrent writes in a production database</li>
-    <li>Fixed an S3 permissions misconfiguration (403 errors) and a Firebase Cloud Messaging delivery bug affecting production notifications</li>
-    <li>Deployed and debugged a Vue 3 SPA behind CloudFront, resolving routing and caching issues in a CDN-fronted production deployment</li>
+    <li>Diagnosed and resolved a PostGIS race condition causing data corruption under concurrent writes in a production database.
+      <span class="tech">Tech: PostgreSQL/PostGIS</span>
+    </li>
+    <li>Fixed an S3 permissions misconfiguration (403 errors) and a Firebase Cloud Messaging delivery bug affecting production notifications.
+      <span class="tech">Tech: AWS S3, Firebase FCM</span>
+    </li>
+    <li>Deployed and debugged a Vue 3 SPA behind CloudFront, resolving routing and caching issues in a CDN-fronted production deployment.
+      <span class="tech">Tech: Vue 3, AWS CloudFront</span>
+    </li>
   </ul>
 </div>
 
