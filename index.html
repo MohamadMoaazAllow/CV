@@ -93,15 +93,20 @@
   }
   .skills-line { font-size: 13px; margin-bottom: 4px; }
   .skills-line strong { color: #1A3259; }
+  @page { size: A4; margin: 10mm 0; }
   @media print {
-    body { padding: 6px 45px 4px; }
-    .contact-line { margin-bottom: 10px; }
-    h2 { margin-top: 6px; margin-bottom: 3px; }
+    body { padding: 0 42px; font-size: 12.5px; line-height: 1.32; }
+    h1 { font-size: 23px; }
+    .subtitle, .summary, li { font-size: 12.5px; }
+    .skills-line { font-size: 12px; margin-bottom: 2px; }
+    .contact-line { font-size: 11.5px; margin-bottom: 8px; }
+    .entry-header { font-size: 13px; }
+    .entry-sub, .entry-header .date { font-size: 11.5px; }
+    h2 { font-size: 13px; margin-top: 7px; margin-bottom: 3px; }
     .entry { margin-bottom: 4px; page-break-inside: avoid; break-inside: avoid; }
-    .entry-sub { margin-bottom: 2px; }
-    ul { margin-top: 2px; }
-    li { margin-bottom: 2px; page-break-inside: avoid; break-inside: avoid; }
-    .summary { line-height: 1.3; }
+    .entry-sub { margin-bottom: 1px; }
+    ul { margin-top: 1px; }
+    li { margin-bottom: 1px; page-break-inside: avoid; break-inside: avoid; }
     .section { page-break-inside: avoid; break-inside: avoid; }
   }
 </style>
@@ -111,52 +116,58 @@
 <div class="subtitle">Full-Stack Software Engineer | NestJS · Laravel · Vue 3 · Flutter | Backend-Focused</div>
 <div class="contact-line">
   Damascus, Syria &nbsp;|&nbsp; +963 959 024 914 &nbsp;|&nbsp; moaazallow@gmail.com &nbsp;|&nbsp;
-  <a href="https://linkedin.com/in/mohamad-moaaz-allow">linkedin.com/in/mohamad-moaaz-allow</a> &nbsp;|&nbsp;
+  <a href="https://www.linkedin.com/in/mohamad-moaaz-allow-a86a39222/">linkedin.com/in/mohamad-moaaz-allow-a86a39222</a> &nbsp;|&nbsp;
   <a href="https://github.com/MohamadMoaazAllow">github.com/MohamadMoaazAllow</a>
 </div>
 
 <h2>Professional Summary</h2>
-<div class="summary">Final-year Software Engineering student (Al-Sham Private University, expected graduation June 2027) and backend-focused full-stack engineer, currently delivering production systems at Quantum Bridge Solutions — NestJS/Laravel backends, Vue 3 dashboards, and Flutter mobile apps. Hands-on experience with secure architecture, RBAC design, and AWS cloud deployment, having shipped a government digital-transformation platform and a production HR/workflow ecosystem.</div>
+<div class="summary">Final-year Software Engineering student (Al-Sham Private University, expected graduation June 2027) and backend-focused full-stack engineer at Quantum Bridge Solutions, shipping NestJS backends, Vue 3 dashboards, and Flutter apps deployed on AWS. Hands-on with approval-workflow engines, permission systems, secure token-based auth, multi-tenant SaaS isolation, and test-heavy delivery.</div>
 
 <h2>Technical Skills</h2>
-<div class="skills-line"><strong>Backend:</strong> NestJS, Laravel, Node.js, TypeORM, REST APIs, Microservices (TCP), JWT/RBAC</div>
-<div class="skills-line"><strong>Frontend &amp; Mobile:</strong> Vue 3, React, Flutter, Dart, Socket.io</div>
-<div class="skills-line"><strong>Databases:</strong> PostgreSQL, MySQL, Supabase</div>
-<div class="skills-line"><strong>Cloud &amp; DevOps:</strong> AWS (EC2, S3, CloudFront, IAM), Docker, Nginx, PM2, CI/CD</div>
-<div class="skills-line"><strong>Tools:</strong> Git, Postman, Swagger/OpenAPI, Jira</div>
+<div class="skills-line"><strong>Backend:</strong> NestJS, Laravel, Node.js, TypeORM, REST APIs, NestJS Microservices (TCP), JWT/RBAC, Firebase Cloud Messaging</div>
+<div class="skills-line"><strong>Frontend &amp; Mobile:</strong> Vue 3, Pinia, React, Next.js, Flutter, Dart, Socket.io</div>
+<div class="skills-line"><strong>Databases &amp; Storage:</strong> PostgreSQL, MariaDB, Supabase (Postgres &amp; Storage), AWS S3</div>
+<div class="skills-line"><strong>Cloud &amp; Deployment:</strong> AWS (EC2, S3, CloudFront, IAM), PM2, Vercel</div>
+<div class="skills-line"><strong>Testing &amp; Tools:</strong> Jest, Vitest, Git, Postman, Swagger/OpenAPI</div>
 
 <h2>Experience</h2>
 <div class="entry">
   <div class="entry-header"><span>Full-Stack Software Engineer</span><span class="date">Jan 2026 – Present</span></div>
   <div class="entry-sub">Quantum Bridge Solutions</div>
   <ul>
-    <li>Delivered the Ministry of Administrative Development platform, a government digital-transformation system for administrative workflows and citizen services.</li>
-    <li>Built Golden Core, a full HR/workflow ecosystem (Flutter + NestJS + Vue 3) with GPS attendance, real-time chat, and a granular role-based permission system, deployed on AWS.</li>
-    <li>Architected a 5-service NestJS microservices monorepo with TCP inter-service communication and independent databases per service.</li>
-    <li>Ran full-stack production security audits, identifying and remediating critical authentication/authorization issues; built an image compression pipeline that cut storage footprint by roughly 20x.</li>
-  </ul>
-</div>
-
-<h2>Featured Project</h2>
-<div class="entry">
-  <div class="entry-header"><span>Othman Mosque — Educational &amp; Administrative Management Platform<span class="tag">Live in Production</span></span></div>
-  <div class="entry-sub">NestJS · PostgreSQL · TypeORM · Next.js</div>
-  <ul>
-    <li>Designed and built a full-stack platform (~40 REST endpoints) for Quranic memorization circles, attendance, and teacher workflows, with a scope-based RBAC engine and race-safe JWT refresh-token rotation.</li>
-    <li>Led a full-stack security audit, identifying and remediating critical issues (IDOR risks, insecure default credentials) plus 19 additional hardening fixes.</li>
+    <li>Golden Core (HR/workflow ecosystem): sole developer of the Flutter app (GPS attendance, Socket.io chat, FCM push) and main developer of the Vue 3 dashboard; contributor to the NestJS backend (185 endpoints, ~1,000 unit tests), deployed on AWS (S3/CloudFront, EC2).</li>
+    <li>Built a configurable HR approval-workflow engine with sequential multi-step chains for leave, loan, overtime, and trip requests, permission-based finance approval, and hourly/backdated leave.</li>
+    <li>Implemented refresh-token rotation with a reuse grace period for concurrent refreshes; audited the ability-based permission system, enforced it globally, and closed 4 authorization gaps.</li>
+    <li>Built the Vue 3 admin dashboard for the Ministry of Administrative Development platform (Arabic/RTL, workflow builder, Syria's national visual identity).</li>
+    <li>Delivered client features for Quantum Accountant (VIN decoding, client and transaction management, purchase/sale flows) and Bayan Design (per-branch stock, configurable product questions, dependency security fix); migrated services from HTTP to TCP transport in a 5-service NestJS microservices system.</li>
   </ul>
 </div>
 
 <h2>Projects</h2>
 <div class="entry">
   <div class="entry-header"><span>Multi-Tenant Real Estate Archiving &amp; SaaS Platform</span></div>
-  <div class="entry-sub">NestJS, Vue 3, PostgreSQL, Supabase</div>
+  <div class="entry-sub">NestJS, Vue 3, PostgreSQL, Supabase, sharp</div>
   <ul>
-    <li>Multi-tenant document archiving platform with tiered SaaS subscription plans and per-office isolation, backed by 268 backend unit tests, 14 e2e tests, and 195 frontend tests.</li>
+    <li>Multi-tenant archiving platform with tiered SaaS plans, per-office isolation verified by e2e tests, dynamic property/vehicle attributes, and property-to-request matching; 380+ backend unit, 14 e2e, and 330+ frontend tests.</li>
+    <li>Moved uploads to object storage for a stateless app tier, with an image pipeline (resizing, WebP, thumbnails, EXIF/GPS stripping) and per-route rate limiting on authentication endpoints.</li>
   </ul>
 </div>
 <div class="entry">
-  <div class="entry-header"><span>Tutory — Tutoring Marketplace Platform (Graduation Project)</span></div>
+  <div class="entry-header"><span>Othman Mosque — Educational &amp; Administrative Management Platform<span class="tag">Live in Production</span></span></div>
+  <div class="entry-sub">NestJS, PostgreSQL, TypeORM, Next.js</div>
+  <ul>
+    <li>Co-built (3-person team) a platform with 140+ endpoints for Quranic memorization circles; bootstrapped the backend (schema, JWT and role-based auth) and delivered 7 core modules including circles, sessions, attendance, and evaluations.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="entry-header"><span>Fni — Technician Marketplace</span></div>
+  <div class="entry-sub">NestJS, PostgreSQL, React 19, Flutter</div>
+  <ul>
+    <li>Solo-built backend (55 endpoints), admin dashboard, and mobile app for publishing and finding technician profiles, with S3 uploads, query indexing, and auth unit/e2e tests.</li>
+  </ul>
+</div>
+<div class="entry">
+  <div class="entry-header"><span>Tutory — Tutoring Marketplace Platform (University Project)</span></div>
   <div class="entry-sub">Laravel 12, MariaDB, Sanctum, REST API</div>
   <ul>
     <li>Two-sided tutoring marketplace with a wallet hold/release system, QR-verified sessions, a multi-stage booking state machine, and Paymera / Jitsi Meet integration.</li>
